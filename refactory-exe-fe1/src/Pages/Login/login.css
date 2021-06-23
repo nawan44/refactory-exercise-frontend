@@ -1,0 +1,71 @@
+.container-login{
+    position: absolute;
+    width: 1920px;
+    height: 1088px;
+    
+    
+}
+.container-login-left{
+    width: 40%;
+    height: 588px;
+    float: left;
+    background: #05466A;  
+}
+.logo-contact{
+    position: absolute;
+width: 546px;
+height: 500px;
+
+background: url(../../Assets/background/logo-contact.png);
+}
+.container-login-right{
+    position: absolute;
+    width: 1920px;
+    height: 1088px;
+    ;
+    
+}
+p{
+    position: absolute;
+width: 144px;
+height: 59px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 59px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.textfiel-name{
+    position: absolute;
+    width: 713px;
+    height: 76.12px;
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.textfiel-password{
+    position: absolute;
+    width: 713px;
+    height: 76.12px;
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.btn-login{
+    position: absolute;
+    width: 346px;
+    height: 72px;
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.btn-register{
+    position: absolute;
+width: 346px;
+height: 72px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}

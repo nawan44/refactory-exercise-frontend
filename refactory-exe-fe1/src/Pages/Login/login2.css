@@ -1,0 +1,85 @@
+.container-login {
+    width: 700px;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.container-login-left {
+    width: 300px;
+    height: 500px;
+    float: left;
+    background: #05466A;
+}
+
+.logo-contact {
+    width: 90%;
+    height: 500px;
+    background: url(../../Assets/background/logo-contact.png);
+}
+
+.container-login-right {
+    float: left;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    background-color:#EAE7E7 ;
+}
+.box-login{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.box-login .typography{
+    text-align: center;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 59px;
+    color: #000000;
+}
+
+.textfield-name {
+    width: 70%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #BCBCBC;
+    border-radius: 10px;
+}
+
+.textfield-password {
+    width: 70%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #BCBCBC;
+    border-radius: 10px;
+    margin: 20px 0 !important;
+}
+.input-props{
+    color: #fff !important;
+}
+.btn-login {
+    width: 40%;
+    height: 36px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #E94560 !important;
+    border-radius: 10px;
+    margin: 20px 5px !important;
+    color: #fff !important;
+
+}
+
+.btn-register {
+    width: 40%;
+    height: 36px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #E94560 !important;
+    border-radius: 10px;
+    color: #fff !important;
+    margin: 20px 5px !important;
+
+}
