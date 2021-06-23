@@ -3,7 +3,7 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 
 import '../../Assets/style/login.css'
-export default function Login2() {
+export default function Register() {
     return (
         <div className="container-login" >
             <div className="container-login-left" >
@@ -12,7 +12,7 @@ export default function Login2() {
             </div>
             <div className="container-login-right" >
                 <div className="box-login">
-                    <Typography className="typography">LOGIN</Typography>
+                    <Typography className="typography">REGISTER</Typography>
                     <TextField InputProps={{
                         className: "input-props",
 
@@ -21,7 +21,16 @@ export default function Login2() {
                                 <MailOutlineIcon style={{ color: "#fff" }} />
                             </InputAdornment>
                         ),
-                    }} placeholder="Email" variant="outlined" className="textfield-name" />
+                    }} placeholder="Name" variant="outlined" className="textfield" />
+                    <TextField InputProps={{
+                        className: "input-props",
+
+                        startAdornment: (
+                            <InputAdornment position="start">
+                                <MailOutlineIcon style={{ color: "#fff" }} />
+                            </InputAdornment>
+                        ),
+                    }} placeholder="Email" variant="outlined" className="textfield" />
                     <TextField InputProps={{
                         className: "input-props",
 
@@ -30,9 +39,8 @@ export default function Login2() {
                                 <LockOpenIcon style={{ color: "#fff" }} />
                             </InputAdornment>
                         ),
-                    }} placeholder="Password" variant="outlined" className="textfield-password" />
-                    <Button className="btn-login">LOGIN</Button>
-                    <Button className="btn-login">REGISTER</Button>
+                    }} placeholder="Password" variant="outlined" className="textfield" />
+                    <Button className="btn-register">REGISTER</Button>
                 </div>
             </div>
         </div>
