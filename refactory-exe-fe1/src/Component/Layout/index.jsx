@@ -1,6 +1,6 @@
-import React from "react";
+import React,{ReactElement} from "react";
 import clsx from "clsx";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles, useTheme , Theme, createStyles} from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
@@ -9,7 +9,7 @@ import List from "@material-ui/core/List";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
-import Footer from "../Layout/Footer"
+import Footer from "./Footer"
 import {
   Home,
   Person,
@@ -93,19 +93,20 @@ const dataMenu = [
     // role: "admin"
   },
   {
-    path: "/user",
-    text: "User",
+    path: "/login",
+    text: "Login",
     // role: ["prod", "admin"],
     icon: <Person />,
   },
 
   {
-    path: "/article",
-    text: "Article",
+    path: "/register",
+    text: "Register",
     // role: ["supp", "admin"],
     icon: <Assignment />,
   },
 ];
+
 export default function PersistentDrawerLeft(props) {
   let location = useLocation();
   const classes = useStyles();
@@ -164,15 +165,17 @@ export default function PersistentDrawerLeft(props) {
               <NavLink
                 to={row.path}
                 key={index}
-                className={classes.sidebarTitle}
+                // className={classes.sidebarTitle}
               >
                 <ListItem
                   button
                   key={index}
-                  className={classes.listItem}
+                  // className={classes.listItem}
                   selected={location.pathname === row.path}
                 >
-                  <ListItemIcon className={classes.icon}>
+                  <ListItemIcon 
+                  //className={classes.icon}
+                  >
                     {row.icon}
                   </ListItemIcon>
                   <ListItemText primary={row.text} />
@@ -185,7 +188,9 @@ export default function PersistentDrawerLeft(props) {
 
       </Drawer>
       <main className={classes.content}>
-        <div className={classes.toolbar} />
+        <div 
+        // className={classes.toolbar}
+         />
         {props.children}
 <Footer/>
       </main>

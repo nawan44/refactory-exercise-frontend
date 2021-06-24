@@ -4,14 +4,11 @@ import './App.css';
 import Login from './Pages/Login'
 import Register from './Pages/Register';
 import Dashboard from './Pages/Dashboard';
-
+import Router from './Router'
 function App() {
   return (
-    <div className="App">
-      <Dashboard/>
-       <Login />
-      <Register />
-    </div>
+      <Router />
+
   );
 }
 

@@ -2,7 +2,6 @@ import { TextField, Button, Typography, InputAdornment } from "@material-ui/core
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 
-import '../../Assets/style/login.css'
 export default function Login() {
     return (
         <div className="container-login" >
