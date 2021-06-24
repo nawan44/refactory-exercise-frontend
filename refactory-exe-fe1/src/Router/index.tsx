@@ -17,7 +17,7 @@ export default function Routes() {
             <Route path="/register" exact>
               <Register />
             </Route>
-        <Route path="dashboard/">
+        <Route path="/dashboard">
           <MainApp />
         </Route>
       </Switch>

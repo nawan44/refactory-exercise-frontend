@@ -10,9 +10,7 @@ import React from "react";
 
 import { ExitToApp } from "@material-ui/icons";
 import { IconButton } from "@material-ui/core";
-import { Dashboard, Register, Login } from "../Pages";
-// import Register from "./Register";
-// import Login from ".Login";
+import { Dashboard, Favorit, Contact, AddContact } from "../Pages";
 import { StylesProvider } from "@material-ui/core/styles";
 import "../Assets/style/login.css";
 import "../Assets/style/pages.css";
@@ -67,6 +65,15 @@ const MainApp = () => {
             <Switch>
               <Route path="/dashboard" exact>
                 <Dashboard />
+              </Route>
+              <Route path="/contact" exact>
+                <Contact />
+              </Route>
+              <Route path="/add-contact" exact>
+                <AddContact />
+              </Route>
+              <Route path="/favorit" exact>
+                <Favorit />
               </Route>
             </Switch>
           </Layout>

@@ -1,6 +1,7 @@
 import { TextField, Button, Typography, InputAdornment } from "@material-ui/core";
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
     return (
@@ -13,8 +14,7 @@ export default function Login() {
                 <div className="box-login">
                     <Typography className="typography">LOGIN</Typography>
                     <TextField InputProps={{
-                        className: "input-props",
-
+                        className: "textfield",
                         startAdornment: (
                             <InputAdornment position="start">
                                 <MailOutlineIcon style={{ color: "#fff" }} />
@@ -22,16 +22,15 @@ export default function Login() {
                         ),
                     }} placeholder="Email" variant="outlined" className="textfield-name" />
                     <TextField InputProps={{
-                        className: "input-props",
-
+                        className: "textfield",
                         startAdornment: (
                             <InputAdornment position="start">
                                 <LockOpenIcon style={{ color: "#fff" }} />
                             </InputAdornment>
                         ),
                     }} placeholder="Password" variant="outlined" className="textfield-password" />
-                    <Button className="btn-login">LOGIN</Button>
-                    <Button className="btn-login">REGISTER</Button>
+                    <Button className="btn-login"><Link to="/dashboard" > Login </Link> </Button>
+                    <Button className="btn-login" ><Link to="/register" > register </Link></Button>
                 </div>
             </div>
         </div>

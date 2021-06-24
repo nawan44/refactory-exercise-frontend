@@ -12,33 +12,28 @@ export default function Register() {
             <div className="container-login-right" >
                 <div className="box-login">
                     <Typography className="typography">REGISTER</Typography>
-                    <TextField InputProps={{
-                        className: "input-props",
-
+                    <TextField InputProps={{ className:"textfield",
                         startAdornment: (
                             <InputAdornment position="start">
                                 <MailOutlineIcon style={{ color: "#fff" }} />
                             </InputAdornment>
                         ),
-                    }} placeholder="Name" variant="outlined" className="textfield" />
-                    <TextField InputProps={{
-                        className: "input-props",
-
+                    }} placeholder="Name" variant="outlined" className="textfield-name" />
+                    <TextField InputProps={{ className:"textfield",
                         startAdornment: (
                             <InputAdornment position="start">
                                 <MailOutlineIcon style={{ color: "#fff" }} />
                             </InputAdornment>
                         ),
-                    }} placeholder="Email" variant="outlined" className="textfield" />
+                    }} placeholder="Email" variant="outlined" className="textfield-name" />
                     <TextField InputProps={{
-                        className: "input-props",
-
+                         className:"textfield",
                         startAdornment: (
                             <InputAdornment position="start">
                                 <LockOpenIcon style={{ color: "#fff" }} />
                             </InputAdornment>
                         ),
-                    }} placeholder="Password" variant="outlined" className="textfield" />
+                    }} placeholder="Password" variant="outlined" className="textfield-name" />
                     <Button className="btn-register">REGISTER</Button>
                 </div>
             </div>

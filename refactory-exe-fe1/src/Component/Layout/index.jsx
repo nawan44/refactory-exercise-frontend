@@ -93,15 +93,15 @@ const dataMenu = [
     // role: "admin"
   },
   {
-    path: "/login",
-    text: "Login",
+    path: "/contact",
+    text: "Contact",
     // role: ["prod", "admin"],
     icon: <Person />,
   },
 
   {
-    path: "/register",
-    text: "Register",
+    path: "/favorit",
+    text: "Favorit",
     // role: ["supp", "admin"],
     icon: <Assignment />,
   },
@@ -139,7 +139,7 @@ export default function PersistentDrawerLeft(props) {
             <Menu />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Refactory ReactJs Challenge{" "}
+            Refactory Exercise Challenge{" "}
           </Typography>
         </Toolbar>
       </AppBar>
