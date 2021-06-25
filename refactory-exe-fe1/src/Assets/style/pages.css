@@ -5,6 +5,11 @@
   text-align: center;
   margin: 0 auto;
 }
+
+.MuiAppBar-colorPrimary {
+  color: #fff;
+  background-color: #05466A;
+}
 .paper {
   text-align: center;
   margin: 0 auto;

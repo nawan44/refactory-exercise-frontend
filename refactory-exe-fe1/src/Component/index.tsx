@@ -1,3 +1,3 @@
-import Layout from "./Layout";
+import Topbar from "./Layout/Topbar";
 
-export { Layout };
+export { Topbar };

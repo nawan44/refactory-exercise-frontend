@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import MainApp from "../Main";
-import { Dashboard, Register, Login } from "../Pages";
+import {  Register, Login } from "../Pages";
 
 
 export default function Routes() {
@@ -17,7 +17,7 @@ export default function Routes() {
             <Route path="/register" exact>
               <Register />
             </Route>
-        <Route path="/dashboard">
+        <Route path="/contact">
           <MainApp />
         </Route>
       </Switch>

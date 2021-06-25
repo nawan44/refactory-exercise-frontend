@@ -1,9 +1,9 @@
 import { TextField, Button, Typography, InputAdornment } from "@material-ui/core";
-
+import Topbar from "../../../Component/Layout/Topbar"
  function AddContact() {
     return (
-        <div className="container-dashboard" >
-            Add COntact
+        <div  >
+      <Topbar />
         </div>
     );
 }

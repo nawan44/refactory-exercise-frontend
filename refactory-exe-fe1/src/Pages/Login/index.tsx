@@ -29,7 +29,7 @@ export default function Login() {
                             </InputAdornment>
                         ),
                     }} placeholder="Password" variant="outlined" className="textfield-password" />
-                    <Button className="btn-login"><Link to="/dashboard" > Login </Link> </Button>
+                    <Button className="btn-login"><Link to="/contact" > Login </Link> </Button>
                     <Button className="btn-login" ><Link to="/register" > register </Link></Button>
                 </div>
             </div>

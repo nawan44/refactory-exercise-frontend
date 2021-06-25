@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/styles";
-import { Layout } from "../Component";
+import Topbar  from "../Component/Layout/Topbar";
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,7 +10,11 @@ import React from "react";
 
 import { ExitToApp } from "@material-ui/icons";
 import { IconButton } from "@material-ui/core";
-import { Dashboard, Favorit, Contact, AddContact } from "../Pages";
+// import {  Favorit, Contact, AddContact } from "../Pages";
+import Contact from "../Pages/Contact"
+import Favorit from "../Pages/Favorit"
+import AddContact from "../Pages/Contact/AddContact"
+
 import { StylesProvider } from "@material-ui/core/styles";
 import "../Assets/style/login.css";
 import "../Assets/style/pages.css";
@@ -44,28 +48,8 @@ const MainApp = () => {
 
   return (
     <>
-      <IconButton
-        style={{
-          color: "#FFFF",
-          zIndex: 2000,
-          position: "absolute",
-          top: "8px",
-          right: "10px",
-        }}
-        onClick={() => {
-          localStorage.removeItem("token");
-          history.push("login");
-        }}
-      >
-        <ExitToApp className={classes.logout} />
-      </IconButton>
       <Router>
-        <StylesProvider injectFirst>
-          <Layout>
             <Switch>
-              <Route path="/dashboard" exact>
-                <Dashboard />
-              </Route>
               <Route path="/contact" exact>
                 <Contact />
               </Route>
@@ -76,8 +60,7 @@ const MainApp = () => {
                 <Favorit />
               </Route>
             </Switch>
-          </Layout>
-        </StylesProvider>
+          
       </Router>
     </>
   );
