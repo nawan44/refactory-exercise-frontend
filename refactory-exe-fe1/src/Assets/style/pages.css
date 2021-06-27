@@ -4,9 +4,10 @@
   margin: 100px 0 0 0;
   text-align: center;
   margin: 0 auto;
+  background-color:#EAE7E7 ;
 }
 
-.MuiAppBar-colorPrimary {
+.MuiAppBar {
   color: #fff;
   background-color: #05466A;
 }

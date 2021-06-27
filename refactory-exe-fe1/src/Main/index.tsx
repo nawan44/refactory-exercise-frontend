@@ -18,6 +18,7 @@ import AddContact from "../Pages/Contact/AddContact"
 import { StylesProvider } from "@material-ui/core/styles";
 import "../Assets/style/login.css";
 import "../Assets/style/pages.css";
+import "../Assets/style/input.css"
 
 const useStyles = makeStyles((theme) => ({
   logout: {
@@ -47,7 +48,6 @@ const MainApp = () => {
   const classes = useStyles();
 
   return (
-    <>
       <Router>
             <Switch>
               <Route path="/contact" exact>
@@ -60,9 +60,7 @@ const MainApp = () => {
                 <Favorit />
               </Route>
             </Switch>
-          
       </Router>
-    </>
   );
 };
 
